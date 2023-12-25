@@ -161,8 +161,8 @@ class Profile extends Component {
       </div>
       <div className='item'>
       <label htmlFor='PharAddress'>Pharmacy Address</label>
-        <input type="text" id="PharAddress" className='address'/>
-        <input type="text" id="PharAddress" className='address'/>
+        <input type="text" id="PharAddress" />
+        <input type="text" id="PharAddress"/>
         <input type="text" id="PharAddress" />
       </div>
       <button type="submit" className='submitBtn' onClick={()=>this.onBasicDetailsSubmit()}>Save Details</button>
