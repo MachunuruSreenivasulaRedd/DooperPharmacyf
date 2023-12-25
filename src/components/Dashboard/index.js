@@ -52,14 +52,14 @@ class Dashboard extends Component{
             <div className='cardsContainer'>
                 <div className='card' onClick={this.onClickChangeSendQuotation}>
                     <div className='adiv'>
-                        <a className='adivInner' href='/#'>
+                        <a className='adivInner'>
                             <p className='patientId'>#123456</p>
                             <div className='adivInner'>
                             <p className={dateClass}><span className='spanIcon'><CiCalendarDate/></span>  13 June, 2023   </p>
                             <p className={dateClass}><span className='spanIcon'><BiTimeFive/></span>  09:00AM</p>
                             </div>
                         </a>
-                        <a className='vaccines' href='/#' >
+                        <a className='vaccines' >
                             <p className='vaccine'>Vaccine 1</p>
                             <hr className='vaccineHr'/>
                             <p className='vaccine'>Vaccine 2</p>
@@ -72,9 +72,9 @@ class Dashboard extends Component{
                         <div className='profileImgContainer'>
                             <img src="https://res.cloudinary.com/dywrzseia/image/upload/v1695474313/Ellipse_2_b3u52q.png" alt="profileImg"/>
                             <div className='detailsContainer'>
-                                <a className='patientName' href='/#'>Patient Name</a><br/>
-                                {delivered?<div><a className='details' href='/#'>Age : 32 | Gender: Male | Blood Group: O+</a><br/>
-                                <a className='details' href='/#'>Height : 6” 3 inches | Weight : 76</a></div>:<a className='address' href='/#'>XYZ,streetname,<span classsName="city">city</span></a>}
+                                <a className='patientName' >Patient Name</a><br/>
+                                {delivered?<div><a className='details'>Age : 32 | Gender: Male | Blood Group: O+</a><br/>
+                                <a className='details' >Height : 6” 3 inches | Weight : 76</a></div>:<a className='address' href='/#'>XYZ,streetname,<span classsName="city">city</span></a>}
                             </div>
                         </div>
                         {delivered?<button className='delivered'>Delivered</button>:QuotationStatus?<button className='accepted'>Accepted</button>:<button className='requested'>Quotation Requested</button>}
@@ -101,14 +101,14 @@ class Dashboard extends Component{
             <div className='cardsContainer'>
                 <div className='card' onClick={this.onClickChangeSendQuotation}>
                     <div className='adiv'>
-                        <a className='adivInner' href='/#'>
+                        <a className='adivInner'>
                             <p className='patientId'>#123456</p>
                             <div className='adivInner'>
                             <p className={dateClass}><span className='spanIcon'><CiCalendarDate/></span>  13 June, 2023   </p>
                             <p className={dateClass}><span className='spanIcon'><BiTimeFive/></span>  09:00AM</p>
                             </div>
                         </a>
-                        <a className='vaccines' href='/#'>
+                        <a className='vaccines'>
                             <p className='vaccine'>Vaccine 1</p>
                             <hr className='vaccineHr'/>
                             <p className='vaccine'>Vaccine 2</p>
@@ -121,8 +121,8 @@ class Dashboard extends Component{
                         <div className='profileImgContainer'>
                             <img src="https://res.cloudinary.com/dywrzseia/image/upload/v1695474313/Ellipse_2_b3u52q.png" alt="profileImg"/>
                             <div className='detailsContainer'>
-                                <a className='patientName' href='/#'>Patient Name</a><br/>
-                                {delivered?<div><a className='details' href='/#'>Age : 32 | Gender: Male | Blood Group: O+</a><br/>
+                                <a className='patientName' >Patient Name</a><br/>
+                                {delivered?<div><a className='details'>Age : 32 | Gender: Male | Blood Group: O+</a><br/>
                                 <a className='details'>Height : 6” 3 inches | Weight : 76</a></div>:<a className='address'>XYZ, streetname,city</a>}
                             </div>
                         </div>

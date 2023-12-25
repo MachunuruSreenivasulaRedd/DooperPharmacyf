@@ -93,12 +93,10 @@
     justify-content: center;
     align-items: center;
     background-color: white;
-    padding: 50px;
     width: 475px;
-    padding:24px, 60px, 24px;
+    padding:60px,24px,60px, 24px;
 height: 259px;
 border-radius: 10px;
-gap: 49px;
 font-family: Montserrat;
 font-size: 18px;
 font-weight: 600;
@@ -132,8 +130,11 @@ box-sizing: border-box;
 }
 .popupPara{
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
+    line-height: 22px;
     color: #000000;
+    text-align: center;
+    width:427px;                
 }
 .span{
     color: #E40443;
@@ -143,16 +144,18 @@ box-sizing: border-box;
         color: #fff;
         border: none;
         border-radius: 8px;
-        font-size: 15px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
         cursor: pointer;
         margin-top: 49px;
         display: flex;
-width: 279px;
-height: 46px;
-padding: 0px 9px;
-justify-content: center;
-align-items: center;
-box-sizing: border-box;
+        width: 279px;
+        height: 46px !important;
+        padding: 15px 9px;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
 }
 
 .vacContainer{
