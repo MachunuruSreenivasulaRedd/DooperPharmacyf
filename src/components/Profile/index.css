@@ -4,12 +4,11 @@
 }
 .maincontent-container {
     display: flex;
-    overflow: hidden;
     min-height: 100vh;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin-top:-25px;
+    margin-top:-20px;
   }
   .maincontent-maincontent {
     gap: 16px;
@@ -17,7 +16,7 @@
     height: 100vh;
     display: flex;
     padding: 0 120px 48px;
-    overflow-x: hidden;
+  
     align-items: flex-start;
     flex-shrink: 0;
     flex-direction: column;
