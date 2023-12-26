@@ -176,12 +176,11 @@ class Earnings extends Component {
                   className="content-check1"
                 />
               </div>
-              
               <div>
                 <div className="content-txt">
                   <div className="content-tt06">
                     <span className="content-text47 MediumMedium">
-                      <span>Payment Request Generated</span>
+                      <span className='paymentStatus'>Payment Request Generated</span>
                     </span>
                     <span className="content-text49 SmallMedium">
                       <span>17, June 2023 | 08:00 AM</span>
@@ -201,7 +200,7 @@ class Earnings extends Component {
                 <div className="content-txt1">
                   <div className="content-tt07">
                     <span className="content-text51 MediumMedium">
-                      <span>Payment Sent</span>
+                      <span className='paymentStatus'>Payment Sent</span>
                     </span>
                     <span className="content-text53 SmallMedium">
                       <span>17, June 2023</span>
@@ -221,7 +220,7 @@ class Earnings extends Component {
                 <div className="content-txt2">
                   <div className="content-tt08">
                     <span className="content-text57 MediumMedium">
-                      <span>In process</span>
+                      <span className='paymentStatus'>In process</span>
                     </span>
                     <span className="content-text59 SmallMedium">
                       <span>17, June 2023</span>
@@ -240,7 +239,7 @@ class Earnings extends Component {
                 <div className="content-txt3">
                   <div className="content-tt09">
                     <span className="content-text63 MediumMedium">
-                      <span>Payment Credited</span>
+                      <span className='paymentStatus'>Payment Credited</span>
                     </span>
                     <span className="content-text65 SmallMedium">
                       <span>Remaining</span>
@@ -342,7 +341,7 @@ class Earnings extends Component {
                             Withdrawal
                         </div>
                         <div className='sortSection'>
-                            <span>Sort By </span>
+                            <span>Sort by </span>
                             <span className='pageNo'>Page</span>
                             <select>
                                 <option value={1}>1</option>
@@ -361,7 +360,9 @@ class Earnings extends Component {
                         </div>
                     </div>
                     {this.renderSections()}
-                    <Pagination />
+                    <div className="paginationContainer">
+                      <Pagination />
+                      </div>
                     </div>
          </>
         )

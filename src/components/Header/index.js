@@ -9,7 +9,7 @@ import {HiPhone} from 'react-icons/hi'
 
 const Header=()=>(
     <div className="headerContainer">
-        <img src="https://res.cloudinary.com/dywrzseia/image/upload/v1694708937/Dooper_Logo.png" alt="header" className="logo" />
+        <img src="https://res.cloudinary.com/dfx93rmno/image/upload/v1703593222/Logo_ftx3tl.svg" alt="header" className="logo" />
         <div className="header-items">
             <a className="a">Dooper At Home</a>
             <a className="a">Lab Tests</a>
@@ -24,7 +24,7 @@ const Header=()=>(
                 <a className='dropdown'><AiOutlineCaretDown/></a>
             </div>
             <div className='greyContainer'>
-                <img src="https://res.cloudinary.com/dywrzseia/image/upload/v1695882685/Rectangle_619_t4obov.png" alt="profile img"/>
+                <img src="https://res.cloudinary.com/dfx93rmno/image/upload/v1703593168/Rectangle_619_z0cubg.svg" alt="profile img"/>
                 <NavLink to="/profile" className='dropProfile'>Jaydip Sakhiya</NavLink>
                 <a className='dropdown2'><AiOutlineCaretDown/></a>
             </div>

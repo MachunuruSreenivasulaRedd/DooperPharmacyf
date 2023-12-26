@@ -1,10 +1,11 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable no-unused-vars */
 import { useState } from 'react'
-import {Link, NavLink, Navigate} from 'react-router-dom'
+import {NavLink,Navigate} from 'react-router-dom'
 import OTPInput, { ResendOTP } from "otp-input-react";
 import PhoneNumberValidation from '../PhoneNumberValidation'
 import OTPValidation from '../OTPValidation';
+import Dashboard from '../Dashboard';
 import './index.css'
 
 const LoginForm=()=>{
@@ -28,7 +29,7 @@ const LoginForm=()=>{
 
     const renderLogin=()=>(
         <div className='loginContainer'>
-            <img src="https://res.cloudinary.com/dywrzseia/image/upload/v1694708937/Dooper_Logo.png" alt="dooper img" className='dooperImg'/>
+            <img src="https://res.cloudinary.com/dfx93rmno/image/upload/v1703593222/Logo_ftx3tl.svg" alt="dooper img" className='dooperImg'/>
                 <div className='welcomeContainer'>
                     <a className='welcome'>Welcome</a>
                     <a className='welcomePara'>Welcome to <span className='span_dooper'>DOOPER</span>, please enter your details</a>
@@ -38,7 +39,7 @@ const LoginForm=()=>{
                         <button className='loginBtn' onClick={onClickGetOtp}>Send OTP</button>
                     </div>
                 </div>
-                <div className='conditions'>
+                <div className=''>
                     <div className='checkBoxContainer'>
                         <input type='checkbox' className='checkBox'/>
                         <p className='agree'>By signing up you agree to <span className='span_dooper'>Terms of use</span></p>
@@ -70,7 +71,7 @@ const LoginForm=()=>{
 
     const renderVerify=()=>(
             <div className='loginContainer'>
-                <img src="https://res.cloudinary.com/dywrzseia/image/upload/v1694708937/Dooper_Logo.png" alt="dooper img" className='dooperImg'/>
+                <img src="https://res.cloudinary.com/dfx93rmno/image/upload/v1703593222/Logo_ftx3tl.svg" alt="dooper img" className='dooperImg'/>
                 <div className='otpContainer'>
                     <a className='verify'>Verify</a>
                     <a className='verifyPara'>Enter OTP which we sent to you</a>
@@ -85,20 +86,20 @@ const LoginForm=()=>{
     )
 
     const renderSuccess=()=>(
-        <div className='loginContainer'>
-            <img src="https://res.cloudinary.com/dywrzseia/image/upload/v1694708937/Dooper_Logo.png" alt="dooper img" className='dooperImg'/>
+        <div className='successContainer'>
+            <img src="https://res.cloudinary.com/dfx93rmno/image/upload/v1703593222/Logo_ftx3tl.svg" alt="dooper img" className='dooperImg'/>
             <div className='successImgContainer'>
-                <img src="https://res.cloudinary.com/dywrzseia/image/upload/v1695027900/Group_tubb6n.png" className="sucImg" alt="successful img"/>
+                <img src="https://res.cloudinary.com/dywrzseia/image/upload/v1695027900/Group_tubb6n.png" alt="successful img"/>
                 <a className='successful'>Successful</a>
-                <a className='successfulPara'>OTP Is verified successfully, Start your work as pharmacy</a>
+                <a className='successfulPara'>OPT Is verified successfully, Start your work as pharmacy</a>
                 <button className='successBtn' onClick={onClickContinue}><NavLink className="contLink" to="/dashboard">Continue</NavLink></button>
             </div>
         </div>
     )
 
     const renderReview=()=>(
-        <div className='loginContainer'>
-            <img src="https://res.cloudinary.com/dywrzseia/image/upload/v1694708937/Dooper_Logo.png" alt="dooper img" className='dooperImg'/>
+        <div className='reviewContainer'>
+            <img src="https://res.cloudinary.com/dfx93rmno/image/upload/v1703593222/Logo_ftx3tl.svg" alt="dooper img" className='dooperImg'/>
             <div className='reviewImgContainer'>
                 <img src="https://res.cloudinary.com/dywrzseia/image/upload/v1695039440/Frame_htzijd.png" alt="review img"/>
                 <a className='review'>Profile Under Review</a>
@@ -127,12 +128,12 @@ const LoginForm=()=>{
 
 
    return (
-        <div>
+        <div className='loginMainContainer'>
             {dashboard? <Navigate to="/dashboard" />: <div className="maincontainer">
             <div className="leftcontainer">
                 <p className='dooper'>DOOPER</p>
                 <div className='headingContainer'>
-                    <h2 className='heading'>Start your journey with us</h2>
+                    <h1 className='heading'>Start your journey with us</h1>
                     <p className='para'>Discover the world's best community of doctors and DHAs</p>
                 </div>
                 <div className='ratingContainer'>
@@ -147,12 +148,12 @@ const LoginForm=()=>{
                     </div>
                 </div>
             </div>
-            {renderResult()}
-            
+            <div className="rightContainer">
+                {renderResult()}
+           </div>
+        </div>}
         </div>
-}
-        </div>
-   )
+    )
 }
 
 export default LoginForm

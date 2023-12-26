@@ -42,6 +42,7 @@
     list-style: none;
     align-items: center;
     justify-content: center;
+    margin-left:200px;
   }
   .pageItem{
     background-color: #fff;

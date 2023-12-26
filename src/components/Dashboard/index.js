@@ -70,7 +70,7 @@ class Dashboard extends Component{
                     <hr className='cardHr'/>
                     <div className='middleCardContainer'>
                         <div className='profileImgContainer'>
-                            <img src="https://res.cloudinary.com/dywrzseia/image/upload/v1695474313/Ellipse_2_b3u52q.png" alt="profileImg"/>
+                            <img src="https://res.cloudinary.com/dfx93rmno/image/upload/v1703593193/Ellipse_2_orggq9.svg" alt="profileImg"/>
                             <div className='detailsContainer'>
                                 <a className='patientName' >Patient Name</a><br/>
                                 {delivered?<div><a className='details'>Age : 32 | Gender: Male | Blood Group: O+</a><br/>
@@ -85,7 +85,7 @@ class Dashboard extends Component{
                     </div>
                 </div>
             </div>
-            <div className='paginationContainer'>
+            <div className='paginationContainerDashboard'>
                 <Pagination/>
             </div>
         </div>
@@ -119,7 +119,7 @@ class Dashboard extends Component{
                     <hr className='cardHr'/>
                     <div className='middleCardContainer'>
                         <div className='profileImgContainer'>
-                            <img src="https://res.cloudinary.com/dywrzseia/image/upload/v1695474313/Ellipse_2_b3u52q.png" alt="profileImg"/>
+                            <img src="https://res.cloudinary.com/dfx93rmno/image/upload/v1703593193/Ellipse_2_orggq9.svg" alt="profileImg"/>
                             <div className='detailsContainer'>
                                 <a className='patientName' >Patient Name</a><br/>
                                 {delivered?<div><a className='details'>Age : 32 | Gender: Male | Blood Group: O+</a><br/>
@@ -152,7 +152,7 @@ class Dashboard extends Component{
         <hr className='cardHr'/>
         <div className='middleCardContainer'>
             <div className='profileImgContainer'>
-                <img src="https://res.cloudinary.com/dywrzseia/image/upload/v1695474313/Ellipse_2_b3u52q.png" alt="profileImg"/>
+                <img src="https://res.cloudinary.com/dfx93rmno/image/upload/v1703593193/Ellipse_2_orggq9.svg" alt="profileImg"/>
                 <div className='detailsContainer'>
                     <a className='patientName'>Patient Name</a><br/>
                     {delivered?<div><a className='details'>Age : 32 | Gender: Male | Blood Group: O+</a><br/>
@@ -184,7 +184,7 @@ class Dashboard extends Component{
         <hr className='cardHr'/>
         <div className='middleCardContainer'>
             <div className='profileImgContainer'>
-                <img src="https://res.cloudinary.com/dywrzseia/image/upload/v1695474313/Ellipse_2_b3u52q.png" alt="profileImg"/>
+                <img src="https://res.cloudinary.com/dfx93rmno/image/upload/v1703593193/Ellipse_2_orggq9.svg" alt="profileImg"/>
                 <div className='detailsContainer'>
                     <a className='patientName'>Patient Name</a><br/>
                     {delivered?<div><a className='details'>Age : 32 | Gender: Male | Blood Group: O+</a><br/>
@@ -217,7 +217,7 @@ class Dashboard extends Component{
         <hr className='cardHr'/>
         <div className='middleCardContainer'>
             <div className='profileImgContainer'>
-                <img src="https://res.cloudinary.com/dywrzseia/image/upload/v1695474313/Ellipse_2_b3u52q.png" alt="profileImg"/>
+                <img src="https://res.cloudinary.com/dfx93rmno/image/upload/v1703593193/Ellipse_2_orggq9.svg" alt="profileImg"/>
                 <div className='detailsContainer'>
                     <a className='patientName'>Patient Name</a><br/>
                     {delivered?<div><a className='details'>Age : 32 | Gender: Male | Blood Group: O+</a><br/>
@@ -230,7 +230,7 @@ class Dashboard extends Component{
         </div>
         </div>
         </div>
-        <div className='paginationContainer'>
+        <div className='paginationContainerDashboard'>
                 <Pagination/>
             </div>
         </div>
@@ -392,7 +392,7 @@ class Dashboard extends Component{
                     <hr className='cardHr'/>
                     <div className='middleCardContainer'>
                         <div className='profileImgContainer'>
-                            <img src="https://res.cloudinary.com/dywrzseia/image/upload/v1695474313/Ellipse_2_b3u52q.png" alt="profileImg"/>
+                            <img src="https://res.cloudinary.com/dfx93rmno/image/upload/v1703593193/Ellipse_2_orggq9.svg" alt="profileImg"/>
                             <div className='patientDetails'>
                                 <a className='patientName'>Patient Name</a><br/>
                                 {delivered?<div><a className='details'>Age : 32 | Gender: Male | Blood Group: O+</a><br/>
@@ -407,7 +407,7 @@ class Dashboard extends Component{
                     </div>
                 </div>
             </div>
-            <div className='paginationContainer'>
+            <div className='paginationContainerDashboard'>
                 <Pagination/>
             </div>
         </div>
@@ -441,7 +441,7 @@ class Dashboard extends Component{
                          <hr className='cardHr'/>
                          <div className='middleCardContainer'>
                              <div className='profileImgContainer'>
-                                 <img src="https://res.cloudinary.com/dywrzseia/image/upload/v1695474313/Ellipse_2_b3u52q.png" alt="profileImg"/>
+                                 <img src="https://res.cloudinary.com/dfx93rmno/image/upload/v1703593193/Ellipse_2_orggq9.svg" alt="profileImg"/>
                                  <div>
                                      <a className='patientName'>Patient Name</a><br/>
                                      <a className='address'>XYZ, streetname, city</a>
@@ -455,7 +455,7 @@ class Dashboard extends Component{
                          </div>
                      </div>
                  </div>
-                 <div className='paginationContainer'>
+                 <div className='paginationContainerDashboard'>
                      <Pagination/>
                  </div>
              </div>

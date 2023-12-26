@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React ,{Component} from 'react'
 import { NavLink } from 'react-router-dom';
-import { IoIosArrowDropright } from "react-icons/io";
 import { FaUserAlt } from "react-icons/fa";
 import { FaWallet } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -32,7 +31,7 @@ class Profile extends Component {
         </div>
         <div className="maincontent-profile">
           <div className="maincontent-d">
-            <img src="https://res.cloudinary.com/dywrzseia/image/upload/v1695882685/Rectangle_619_t4obov.png" alt="Ellipse22278" className="maincontent-ellipse2" />
+            <img src="https://res.cloudinary.com/dfx93rmno/image/upload/v1703593168/Rectangle_619_z0cubg.svg" alt="Ellipse22278" className="maincontent-ellipse2" />
             <button className="maincontent-icon" type="button" onClick={()=>this.renderEdit()}>
             <MdOutlineModeEdit className='editIcon'/>
             </button>
@@ -180,8 +179,8 @@ class Profile extends Component {
       </div>
       <div className='item'>
       <label htmlFor='HosAddress'>Hospital Address</label>
-        <input type="text" id="HosAddress" className='address' />
-        <input type="text" id="HosAddress" className='address'/>
+        <input type="text" id="HosAddress" />
+        <input type="text" id="HosAddress" />
         <input type="text" id="HosAddress" />
       </div>
       </form>
@@ -301,7 +300,7 @@ class Profile extends Component {
     const {selectedSection} = this.state
     
   return (
-    <div>
+    <div className='profileMainContainer'>
     <Header />
     {selectedSection!==""&&this.renderEditHeader()}
     {selectedSection===""?this.renderProfile(): this.renderEditSections()}
