@@ -8,7 +8,8 @@ import {HiPhone} from 'react-icons/hi'
 
 
 const Header=()=>(
-    <div className="headerContainer">
+    <div className="NavContainer">
+        <div className='headerContainer'>
         <img src="https://res.cloudinary.com/dfx93rmno/image/upload/v1703593222/Logo_ftx3tl.svg" alt="header" className="logo" />
         <div className="header-items">
             <a className="a">Dooper At Home</a>
@@ -35,6 +36,11 @@ const Header=()=>(
             <div className='iconContainer'>
                 <HiPhone/>
             </div>
+        </div>
+        
+    </div>
+    <div className='ruler'>
+            <hr id='horline'/>
         </div>
     </div>
 )

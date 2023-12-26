@@ -1,13 +1,22 @@
 .headerContainer{
     background-color: #fff;
-    padding: 38px 38px 38px 60px;
+    padding: 38px 38px 0px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width:100vw;
     background: var(--White, #FFF);           
-    height: 125px;
+    height: 110px;
     box-sizing: border-box;
+}
+.ruler{
+    display: block;
+    width: 100vw;
+    height: 15px;
+}
+#horline{
+    color:#E3E6E8 !important;
+    height:0.2px;
 }
 .logo{
     width: 123.538px;
