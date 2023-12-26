@@ -92,7 +92,7 @@ class Notifications extends Component{
                         <a className='dateandtime'>{each.time}</a>
                         </div>
                     </div>
-                    <hr className='cardHr'/>
+                    <hr className='cardHr1'/>
                     </>
                 ))}
         </>
@@ -111,7 +111,7 @@ class Notifications extends Component{
                     <button className='arrow' onClick={this.onClickChangeSendQuotation}><NavLink to="/dashboard"><BiSolidLeftArrowAlt/></NavLink></button>
                     <h1 className='notificationHead'> Notifications</h1>
                 </div>
-                <hr className='cardHr'/>
+                <hr className='cardHr1'/>
                 <div className='notificationSections'>
                     <a className='sectionStyle'>Mark all as read</a>
                     <a className='sectionStyle' onClick={this.onClickClearAll}>Clear all</a>
@@ -119,7 +119,7 @@ class Notifications extends Component{
                     <a className='rightLeftBtns'><FiChevronLeft/></a>
                     <a className='rightLeftBtns'><FiChevronRight/></a>
                 </div>
-                <hr className='cardHr'/>
+                <hr className='cardHr1'/>
                 {clearAll? this.renderNoNotifications(): this.renderNotifications()}
             </div>
             </>
