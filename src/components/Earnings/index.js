@@ -333,12 +333,12 @@ class Earnings extends Component {
             <Header />
             <div className='earnings'>
          {this.renderEarningsHeader()}
-         <div className='sections'>
+         <div className='sectionsPart'>
                         <div className={history} onClick={()=>this.onClickSelectSection("History")}>
                             History
                         </div>
                         <div className={withdrawal} onClick={()=>this.onClickSelectSection("Withdrawal")}>
-                            Withdrawal
+                            Withdrawals
                         </div>
                         <div className='sortSection'>
                             <span>Sort by </span>

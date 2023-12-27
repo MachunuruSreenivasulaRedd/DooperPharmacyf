@@ -23,7 +23,7 @@
     background-color: #B60336;
     padding: 15px 45px 15px 45px;
     border-radius: 16px;
-    width: 400px;
+    width: 560px;
     min-height: 89vh;
     margin-left:10px;
 }
@@ -38,6 +38,7 @@
     font-size: 40px;
     font-weight: 700;
     color: #ffffff;
+    line-height: 54px;
 }
 .para{
     font-size: 28px;
@@ -53,7 +54,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 80%;
+    width: 85%;
     flex-wrap: wrap;
     flex-shrink: 1;
 }

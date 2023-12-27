@@ -5,14 +5,12 @@
     width:100vw;
     overflow-x: hidden;
     min-height: 85.7vh;
-    background-color: #fff;
-    margin-top:-10px;
+    background: var(--Background, linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), #F4F4F4);
 }
 .noBookings{
     display: flex;
     justify-content: center;
-    width:100%;
-    
+    width:100%; 
 }
 .noBookImg{
     width:250px;
@@ -164,7 +162,7 @@ box-sizing: border-box;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin:15px;
+    margin-top:6px;
 }
 .footer{
     display: flex;
@@ -251,9 +249,8 @@ box-sizing: border-box;
     justify-content: flex-start;
     align-items: center;
     height: 90px;
-    margin: 16px 60px 16px  80px;
-    padding-left:40px;
-    margin-left: 50px;
+    margin: 16px 60px 0px  40px !important;
+    padding-left:30px;
     width: 91%;
     border: 1px solid #E1E5E8;
     border-width: 0px 0px 2px 0px;
@@ -261,7 +258,7 @@ box-sizing: border-box;
     
 }
 .patientsDetails{
-    margin-left:20px;
+    margin-left:10px;
     text-align: end;
 }
 .availPopup{
@@ -318,17 +315,17 @@ letter-spacing: 0em;
 
 .middleContainer{
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
     min-height: 60vh;
-    background-color:#ffffff 50%);
+    width:100vw;
+    background-color:#ffffff;
 }
 .middleMainContainer{
     display: flex;
     flex-direction: column;
-    margin-left:-25px;
-    width:100%;
+    width:105vw;
+    margin-top:10px;
     overflow: hidden;
     
 }
@@ -355,10 +352,10 @@ letter-spacing: 0em;
     flex-direction:column ;
     border: 1.1px solid #D3D3D3;
     border-radius: 12px;
-    width: 360px;
+    width: 368px;
     height: 215px;
     padding: 0px;
-    margin: 20px 20px 20px 0px;
+    margin: 0px 20px 20px 0px;
     background-color: #fff;
 }
 .adiv{
@@ -475,13 +472,14 @@ margin-left: 18px;
     background-color:#d1d9ea ;
     border: none;
     color:#437BE9 ;
-    width: 140px;
-    font-size: 12px;
+    width: 130px;
+    font-size: 10px;
     height: 22px;
-    padding: 6px, 6px, 6px, 12px;
+    font-weight: 500;
+    padding: 6px, 0px, 6px, 12px;
     border-radius: 24px;
-    gap: 8px;
     text-align: center;
+    margin-left:5px;
 }
 .sendQuotation{
     border: none;
@@ -523,9 +521,9 @@ margin-left: 18px;
     align-items: center;
 }
 .quoteContainer{
-    background-color: #ffffff;
     border-radius: 8px;
     min-width: 650px;
+    border:1px solid #FCE6EC;
 }
 .details{
     color: #5B6572;
@@ -622,15 +620,17 @@ margin-left: 18px;
     margin-bottom:15px;
 }
 .quote{
-    width: 92%;
+    width: 96%;
     padding: 10px;
-    border-radius: 8px;
     display: flex;
+    border-radius: 8px;
+    border: 1px solid var(--Grey-Grey-09, #EEF0F3);
+    background: var(--White, #FFF);
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color:transparent;
-    height: 50px;
+    height: 60px;
     margin: 10px 0px 30px 0px;
     cursor: pointer;
 }
@@ -648,9 +648,10 @@ margin-left: 18px;
     font-weight: 400px;
 }
 .uploadIcon{
-   margin-left:-190px;
+   margin-left:-370px;
    margin-top:15px;
    width:30px;
+   height:24px;
 }
 .quoteContainer{
     width:30%;
@@ -774,6 +775,7 @@ margin-left: 18px;
     padding: 15px;
     min-width: 400px;
     margin-left: 50px;
+    border: 1px solid #FCE6EC;
 }
 .received{
     font-size: 18px;
@@ -806,18 +808,20 @@ margin-left: 18px;
     width:90px;
     height:20px;
 }
-    ::-webkit-file-upload-button {
-        display: none;
-     }
 .fileUploader{
-    color: transparent;
-    width: 200px;
+    color:transparent;
+    width: 400px;
     border: none;
+    z-index:5;
     border:0px solid transparent !important;
     cursor:pointer;
-    margin-left:-20px;
+    margin-left:-30px;
     align-self:flex-start;
 }
+
+::-webkit-file-upload-button {
+    display: none;
+ }
 .textInput{
    min-width:400px;
 }

@@ -2,6 +2,14 @@
   width:100vw;
   overflow-x: hidden;
 }
+label{
+  color: var(--Grey-Grey-04, #8D98A4);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 116%; /* 13.92px */
+}
 .maincontent-container {
     display: flex;
     min-height: 100vh;
@@ -21,6 +29,18 @@
     flex-shrink: 0;
     flex-direction: column;
     background-color: var(--dl-color-default-background);
+  }
+  .editHeader{
+    margin-top:-30px;
+  }
+  .EditHighlight{
+    padding-left:30px;
+  }
+  .editHeading{
+    font-size:22px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 32px;
   }
   .maincontent-heading {
     gap: 8px;
@@ -145,7 +165,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #e6eaed;
+    border-bottom: 1px solid #e6eaed;
     text-align: center;
     border-width: 0px 0px 1px 0px;
     background-color: transparent;
@@ -173,8 +193,7 @@ font-weight:600;
     height: 25px;
     margin-left:-50px;
     width: 91%;
-    border: 1px solid #E1E5E8;
-    border-width: 0px 0px 1px 0px;
+    border-bottom: 1px solid #E1E5E8;
     
 }
 .address{
@@ -190,8 +209,7 @@ font-weight:600;
     align-items: center;
     text-align: center;
     background-color: transparent;
-    border: 1px solid #E40443;
-    border-width: 0px 0px 1px 0px;
+    border-bottom: 1px solid #E40443;
     cursor: pointer;
     padding: 0px 10px 5.5px 10px;
     font-weight: 500;

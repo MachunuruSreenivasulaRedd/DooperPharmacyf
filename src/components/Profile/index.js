@@ -276,7 +276,7 @@ class Profile extends Component {
     <div className='editHeader'>
       <div className='EditHighlight'>
       <button type="button" onClick={()=>this.GoBack()}><TiArrowLeftThick className='backIcon'/></button>
-      <h1>Edit Profile</h1>
+      <h1 className='editHeading'>Edit Profile</h1>
       </div>
       <div className='sections'>
                         <div className={`${basicDetails} sectionItem`} onClick={()=>this.onClickSelectSection("BasicDetails")}>

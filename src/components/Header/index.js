@@ -39,9 +39,6 @@ const Header=()=>(
         </div>
         
     </div>
-    <div className='ruler'>
-            <hr id='horline'/>
-        </div>
     </div>
 )
 
