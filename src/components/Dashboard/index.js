@@ -254,10 +254,10 @@ class Dashboard extends Component{
     }
 
     renderPopup=()=>(
-        <div className='availPopup'>
+        <div className='availPopup' onClick={this.onClickChangeAvailability}>
             <div className='popUp'>
                 <p className='popupPara'>Your <span className='span'>Availability</span> is disabled. Please enable your Availability to get new bookings</p>
-                <button className='popupBtn' onClick={this.onClickChangeAvailability}>Enable Availability</button>            
+                <button className='popupBtn' onClick={()=>this.onClickChangeAvailability}>Enable Availability</button>            
             </div>
         </div>
     )
@@ -304,7 +304,7 @@ class Dashboard extends Component{
     }
 
     renderQuotationPopUp=()=>(
-        <div className='popupContainer'>
+        <div className='popupContainer' onClick={this.onClickSendQuote}>
             <div className='addQuotationPopup'>
             <h1 className='addQuoteTxt'>Add Quotation</h1>
             <div className='uploadInput'>
@@ -341,12 +341,12 @@ class Dashboard extends Component{
     
     
     renderQuoteSuccessPopup=()=>(
-        <div className='popupContainer'>
+        <div className='popupContainer' onClick={this.onClickGoToDb}>
                 <div className='successImgContainer quoteSuccessContainer'>
                     <img src="https://res.cloudinary.com/dywrzseia/image/upload/v1695027900/Group_tubb6n.png" alt="successful img" className='quoteSuccessImg'/>
                     <a className='successful success'>Quotation Sent</a>
                     <a className='quoteSuccessPara'>Quotation for request #12345 is sent successfully</a>
-                    <button className='successBtn quoteSuccessBtn' onClick={this.onClickGoToDb}>Go To Dashboard</button>
+                    <button className='successBtn quoteSuccessBtn' onClick={()=>this.onClickGoToDb}>Go To Dashboard</button>
                 </div>
         </div>
     )
@@ -472,7 +472,7 @@ class Dashboard extends Component{
     renderVerifyPopUp=()=>{
         const {OTP}=this.state
     return(
-        <div className='popupContainer'>
+        <div className='popupContainer' onClick={this.onClickVerifyOtp}>
             <div className='otpContainer deliveryOtpContainer'>
                 <a className='verify'>Verify</a>
                 <a className='verifyPara'>Ask patient for OTP</a>
@@ -484,13 +484,13 @@ class Dashboard extends Component{
     }
 
     renderOTPSuccessPopup=()=>(
-        <div className='popupContainer'>
+        <div className='popupContainer' onClick={this.onClickLater}>
                 <div className='successImgContainer quoteSuccessContainer'>
                     <img src="https://res.cloudinary.com/dywrzseia/image/upload/v1695027900/Group_tubb6n.png" alt="successful img" className='quoteSuccessImg'/>
                     <a className='successful success'>Successful</a>
                     <a className='quoteSuccessPara'>OTP is verified successfully</a>
-                    <button className='successBtn quoteSuccessBtn' onClick={this.onClickLater}>Give Feedback</button>
-                    <a onClick={this.onClickLater} className='later'>Later</a>
+                    <button className='successBtn quoteSuccessBtn' onClick={()=>this.onClickLater}>Give Feedback</button>
+                    <a onClick={()=>this.onClickLater} className='later'>Later</a>
                 </div>
         </div>
     )
@@ -587,6 +587,7 @@ class Dashboard extends Component{
                     </div>}
                 </div>
                 {startDelivery&& (
+                    <div id="priceDetailsContainer">
                     <div className='priceDetails'>
                         <p className='received'>Payment Received</p>
                         <div className='adivInner'>
@@ -603,6 +604,7 @@ class Dashboard extends Component{
                             <p>Rs 500</p>
                         </div>
                     </div>
+                    </div>
                 )}
             </div>
         </div>
@@ -615,7 +617,7 @@ class Dashboard extends Component{
         const Medicines=selectedSection==="Medicines"?"selected":"section"
         const Vaccination= selectedSection==="Vaccination"?"selected":"section"
         return(
-            <div>
+            <div className='dashHeaderSection'>
             <div className='top'>
                         <h2 className='dashboard '>Dashboard</h2>
                         <div className='availabilityBtn'>

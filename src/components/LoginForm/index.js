@@ -91,7 +91,7 @@ const LoginForm=()=>{
             <div className='successImgContainer'>
                 <img src="https://res.cloudinary.com/dywrzseia/image/upload/v1695027900/Group_tubb6n.png" alt="successful img"/>
                 <a className='successful'>Successful</a>
-                <a className='successfulPara'>OPT Is verified successfully, Start your work as pharmacy</a>
+                <a className='successfulPara'>OTP Is verified successfully, Start your work as pharmacy</a>
                 <button className='successBtn' onClick={onClickContinue}><NavLink className="contLink" to="/dashboard">Continue</NavLink></button>
             </div>
         </div>

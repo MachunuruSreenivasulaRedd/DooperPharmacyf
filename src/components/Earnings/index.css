@@ -5,11 +5,13 @@
     align-items: center;
     flex-direction: column;
     margin-top:8px;
-    background: var(--Background, linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), #F4F4F4);
-  }
+    background-image:linear-gradient(#f4f4f4,#ffffff 50%);
+    padding-bottom: 16px;
+}
   .Header{
     padding-left: -40px;
     margin-left: -20px;
+    background-image:linear-gradient(#f4f4f4,#ffffff 50%);
   }
   .text{
     color: var(--Grey-Grey-03, #5B6572);
@@ -55,9 +57,7 @@ line-height: 116%; /* 16.24px */
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #e6eaed;
     text-align: center;
-    border-width: 0px 0px 1px 0px;
     background-color: transparent;
     cursor: pointer;
     padding: 0px 10px 5.5px 10px;
@@ -75,8 +75,12 @@ line-height: 116%; /* 16.24px */
     flex-shrink: 0;
   }
   .amountWithdrawal{
-    margin-bottom:10px;
+    margin-bottom:20px;
   }
+  .withdrawAmount{
+    padding-left:20px;
+  }
+
   .earnings-frame4 {
     gap: 8px;
     width: 200px;
@@ -86,7 +90,7 @@ line-height: 116%; /* 16.24px */
     flex-shrink: 0;
     border-radius: 8px;
     flex-direction: column;
-    background-color: whitesmoke;
+    background-color: #ffffff;
     margin-left:8px;
   }
   .high{
@@ -197,7 +201,7 @@ line-height: 116%; /* 16.24px */
     flex-shrink: 0;
     border-radius: 8px;
     flex-direction: column;
-    background-color: #F4F4F4;
+    background-color: #ffffff;
   }
   .earnings-text04 {
     color: var(--dl-color-primary-primary01);
@@ -226,7 +230,7 @@ line-height: 116%; /* 16.24px */
     flex-shrink: 0;
     border-radius: 8px;
     flex-direction: column;
-    background-color: #F4F4F4;
+    background-color: #ffffff;
   }
   .earnings-text08 {
     color: var(--dl-color-grey-grey01);
@@ -255,7 +259,7 @@ line-height: 116%; /* 16.24px */
     flex-shrink: 0;
     border-radius: 8px;
     flex-direction: column;
-    background-color: #F4F4F4;
+    background-color: #ffffff;
   }
   .earnings-text12 {
     color: var(--dl-color-grey-grey01);
@@ -287,10 +291,12 @@ line-height: 116%; /* 16.24px */
     color: var(--Green-Green-1, #41B079)
   }
   .historyContainer{
-    margin:55px;
+    padding:55px;
+    background-image:linear-gradient(#f4f4f4,#ffffff 50%);
   }
-  .earnings{
-    margin:30px;
+  #earnings{
+    padding:30px;
+    background-image:linear-gradient(#f4f4f4,#ffffff 50%);
   }
   .historyItem{
     display: flex;
@@ -322,7 +328,8 @@ flex-direction: row;
     min-height: 100vh;
     align-items: center;
     flex-direction: column;
-    margin-left:55px;
+    padding-left:55px;
+    background-image:linear-gradient(#f4f4f4,#ffffff 50%);
   }
   .content-content {
     gap: 40px;

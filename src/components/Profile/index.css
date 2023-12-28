@@ -1,6 +1,7 @@
 .profileMainContainer{
   width:100vw;
   overflow-x: hidden;
+  background-image:linear-gradient(#f4f4f4,#ffffff 50%);
 }
 label{
   color: var(--Grey-Grey-04, #8D98A4);
@@ -24,14 +25,14 @@ label{
     height: 100vh;
     display: flex;
     padding: 0 120px 48px;
-  
     align-items: flex-start;
     flex-shrink: 0;
     flex-direction: column;
     background-color: var(--dl-color-default-background);
   }
-  .editHeader{
-    margin-top:-30px;
+  #editHeader{
+    margin-top:-10px;
+    margin-left:20px;
   }
   .EditHighlight{
     padding-left:30px;
@@ -42,6 +43,7 @@ label{
     font-style: normal;
     line-height: 32px;
   }
+
   .maincontent-heading {
     gap: 8px;
     display: flex;
@@ -150,9 +152,11 @@ label{
     gap: 12px;
     border: 2px solid #EEF0F3;
   }
+
   .formContainer{
-    margin:25px;
-    margin-left:90px;
+    padding:25px;
+    padding-left:90px;
+    background-image:linear-gradient(#f4f4f4,#ffffff 50%);
   }
   .sectionItem{
     margin-left: -35px;
@@ -165,9 +169,7 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #e6eaed;
     text-align: center;
-    border-width: 0px 0px 1px 0px;
     background-color: transparent;
     cursor: pointer;
     padding: 0px 10px 5.5px 10px;
@@ -191,8 +193,7 @@ font-weight:600;
     justify-content: flex-start;
     align-items: center;
     height: 25px;
-    margin-left:-50px;
-    width: 91%;
+    padding-left:-40px;
     border-bottom: 1px solid #E1E5E8;
     
 }
@@ -245,11 +246,12 @@ font-weight:600;
   .editIcon{
     background-color: green;
     color:white;
-    width:30px;
-    height:28px;
+    width:20px;
+    height:20px;
     border-radius: 40px;
     margin-top:10px;
     margin-left:-10px;
+    padding:6px;
   }
   .maincontent-ic {
     gap: 8px;

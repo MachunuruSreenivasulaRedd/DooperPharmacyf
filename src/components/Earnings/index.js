@@ -270,7 +270,7 @@ class Earnings extends Component {
     renderAmountToWithdraw = () => {
         return(
             <div className='amountWithdrawal'>
-                <input type="integer" placeholder="Amount" />
+                <input type="integer" placeholder="Amount" className='withdrawAmount'/>
                 <button onClick={()=>this.withDraw()} type="button" className='witBtn'>Withdraw Money</button>
             </div>
         )
@@ -279,7 +279,7 @@ class Earnings extends Component {
         const {selectedSection} = this.state
         return(
             <div className='Header'><div className='EditHighlight'>
-                <span className='high'><NavLink to="/profile"><TiArrowLeftThick className='backIcon' /></NavLink>My Earnings
+                <span className='high'><NavLink to="/profile"><img src="https://res.cloudinary.com/dfx93rmno/image/upload/v1703743351/arrow_left_bee0uq.svg" alt="goBack" className='backIcon' /></NavLink>My Earnings
                 </span>
             </div><div className="earnings-container">
                     <div className="earnings-earnings">
@@ -331,7 +331,7 @@ class Earnings extends Component {
             <>
             {showWithdrawalPopup===true&& this.renderWithdrawalPopup()}
             <Header />
-            <div className='earnings'>
+            <div id='earnings'>
          {this.renderEarningsHeader()}
          <div className='sectionsPart'>
                         <div className={history} onClick={()=>this.onClickSelectSection("History")}>

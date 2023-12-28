@@ -273,9 +273,9 @@ class Profile extends Component {
     const documents=selectedSection==="Documents"?"selected":"section"
     const bankInfo=selectedSection==="BankInfo"?"selected":"section"
     return(
-    <div className='editHeader'>
+    <div id='editHeader'>
       <div className='EditHighlight'>
-      <button type="button" onClick={()=>this.GoBack()}><TiArrowLeftThick className='backIcon'/></button>
+      <button type="button" onClick={()=>this.GoBack()}><img src="https://res.cloudinary.com/dfx93rmno/image/upload/v1703743351/arrow_left_bee0uq.svg" alt="goBack" className='backIcon'/></button>
       <h1 className='editHeading'>Edit Profile</h1>
       </div>
       <div className='sections'>
@@ -300,10 +300,12 @@ class Profile extends Component {
     const {selectedSection} = this.state
     
   return (
-    <div className='profileMainContainer'>
+    <div>
     <Header />
+    <div className='profileMainContainer'>
     {selectedSection!==""&&this.renderEditHeader()}
     {selectedSection===""?this.renderProfile(): this.renderEditSections()}
+    </div>
     </div>
   )
 }

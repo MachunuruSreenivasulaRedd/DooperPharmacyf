@@ -79,7 +79,7 @@ class Notifications extends Component{
     
     return(
 
-        <>
+        <div className='notificationTopContainer'>
         {finalNotifications.map(each=>(
                   <> 
                     <div className='notification'>
@@ -92,10 +92,9 @@ class Notifications extends Component{
                         <a className='dateandtime'>{each.time}</a>
                         </div>
                     </div>
-                    <hr className='cardHr1'/>
                     </>
                 ))}
-        </>
+        </div>
 
     )
     }
@@ -108,7 +107,7 @@ class Notifications extends Component{
             <Header/>
             <div className='notificationContainer'>
                 <div className='case'>
-                    <button className='arrow' onClick={this.onClickChangeSendQuotation}><NavLink to="/dashboard"><BiSolidLeftArrowAlt/></NavLink></button>
+                    <button className='arrow' onClick={this.onClickChangeSendQuotation}><NavLink to="/dashboard"><BiSolidLeftArrowAlt className='backIcon'/></NavLink></button>
                     <h1 className='notificationHead'> Notifications</h1>
                 </div>
                 <hr className='cardHr1'/>

@@ -6,7 +6,9 @@
     background-color: #fff;
     margin: 0px 60px 0px 60px;
 }
-
+.backIcon{
+    color:black;
+}
 .notificationHead{
     font-size: 22px;
     color: #1A1C1F;
@@ -38,6 +40,9 @@
     margin-right: 20px;
     cursor: pointer;
 }
+.notificationTopContainer{
+    border-top:1px solid #DBDADE;
+}
 .pageDetails{
     font-size: 14px;
     color: #b9b9be;
@@ -60,6 +65,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 4px 15px 4px 15px;
+    border-bottom: 1px solid #DBDADE;
 }
 .notify{
     display: flex;
