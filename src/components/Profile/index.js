@@ -10,7 +10,6 @@ import { IoMdInformationCircle } from "react-icons/io";
 import { FaStar } from "react-icons/fa6";
 import { RiLogoutCircleRFill } from "react-icons/ri";
 import { MdOutlineModeEdit } from "react-icons/md";
-import { TiArrowLeftThick } from "react-icons/ti";
 import { TbEdit } from "react-icons/tb";
 import './index.css'
 import Header from '../Header'

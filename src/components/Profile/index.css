@@ -1,7 +1,7 @@
 .profileMainContainer{
   width:100vw;
   overflow-x: hidden;
-  background-image:linear-gradient(#f4f4f4,#ffffff 50%);
+  background-color:#f4f4f4;
 }
 label{
   color: var(--Grey-Grey-04, #8D98A4);
@@ -156,7 +156,7 @@ label{
   .formContainer{
     padding:25px;
     padding-left:90px;
-    background-image:linear-gradient(#f4f4f4,#ffffff 50%);
+    background-color:#f4f4f4;
   }
   .sectionItem{
     margin-left: -35px;

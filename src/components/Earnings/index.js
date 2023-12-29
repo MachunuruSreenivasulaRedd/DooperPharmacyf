@@ -1,6 +1,5 @@
 import {Component} from 'react'
 import {NavLink} from 'react-router-dom'
-import {TiArrowLeftThick} from 'react-icons/ti'
 import Header from '../Header'
 import './index.css'
 import Pagination from '../Pagination'

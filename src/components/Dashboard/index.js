@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Component } from 'react';
+// import CardItem from '../CardItem'
 import {FiPhone} from 'react-icons/fi'
 import {FiMail} from 'react-icons/fi'
 import {AiFillInstagram} from 'react-icons/ai'
@@ -50,7 +51,7 @@ class Dashboard extends Component{
     return (
        <div className='middleMainContainer'>
             <div className='cardsContainer'>
-                <div className='card' onClick={this.onClickChangeSendQuotation}>
+            <div className='card' onClick={this.onClickChangeSendQuotation}>
                     <div className='adiv'>
                         <a className='adivInner'>
                             <p className='patientId'>#123456</p>
@@ -128,7 +129,7 @@ class Dashboard extends Component{
                         </div>
                     </div>
                     <hr className='cardHr'/>
-                        <span className='quo'>Quotation: <span>     </span>500</span>
+                        <span className='quo'>Quotation: <span>     </span>Rs.500</span>
                     </div>
                     
 
@@ -161,7 +162,7 @@ class Dashboard extends Component{
             </div>
         </div>
         <hr className='cardHr'/>
-            <span className='quo'>Quotation: <span></span>500</span>
+            <span className='quo'>Quotation: <span></span>Rs.500</span>
         </div>
 
         <div className='card' onClick={this.onClickChangeSendQuotation}>
@@ -193,7 +194,7 @@ class Dashboard extends Component{
             </div>
         </div>
         <hr className='cardHr'/>
-            <span className='quo'>Quotation: <span></span>500</span>
+            <span className='quo'>Quotation: <span></span>Rs.500</span>
         </div>
 
 
@@ -226,7 +227,7 @@ class Dashboard extends Component{
             </div>
         </div>
         <hr className='cardHr'/>
-            <span className='quo'>Quotation: <span></span>500</span>
+            <span className='quo'>Quotation: <span></span>Rs.500</span>
         </div>
         </div>
         </div>
@@ -456,7 +457,7 @@ class Dashboard extends Component{
                      </div>
                  </div>
                  <div className='paginationContainerDashboard'>
-                     <Pagination/>
+                    <Pagination/>
                  </div>
              </div>
          )
@@ -600,8 +601,8 @@ class Dashboard extends Component{
                         </div>
                         <hr className='cardHr'/>
                         <div className='adivInner'>
-                            <p>Total</p>
-                            <p>Rs 500</p>
+                            <p className='costAmount'>Total</p>
+                            <p className='totalAmount'>Rs 500</p>
                         </div>
                     </div>
                     </div>
