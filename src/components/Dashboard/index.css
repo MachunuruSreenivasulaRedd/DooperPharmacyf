@@ -311,7 +311,9 @@ letter-spacing: 0em;
     line-height: 17.6px;
 }
 
-
+/* .middleCardContainer1{
+    border-bottom:1px solid #E4E4E4;
+} */
 .middleContainer{
     display: flex;
     justify-content: flex-start;
@@ -354,7 +356,7 @@ letter-spacing: 0em;
     border: 1.1px solid #D3D3D3;
     border-radius: 12px;
     width: 368px;
-    height: 215px;
+    height: 230px;
     padding: 0px;
     margin: 0px 20px 20px 0px;
     background-color: #ffffff;
@@ -393,7 +395,7 @@ height:21px;
 .date{
     color: #5B6572;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     margin-right: 10px;
 }
 .dateDelivered{
@@ -426,19 +428,29 @@ height:21px;
     height:21px;
     
 }
+#cardHr1{
+    width: 100%;
+    height:0.5px;
+    background-color: #E4E4E4 !important;
+}
 .cardHr{
     /* width: 100%;
     height:0.01;
     color:white; */
     width: 100%;
-    height:0.7px;
+    height:0.5px;
     border:none;
     background-color: #E4E4E4 !important;
 }
+.costAmount{
+    font-size: 16px;
+    font-weight: 500;
+}
+
 .middleCardContainer{
     display: flex;
     justify-content: space-between;
-    padding: 5px 16px 5px 16px;
+    padding: 5px 16px 10px 16px;
     background-color: transparent;
 }
 .profileImgContainer{

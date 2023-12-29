@@ -602,7 +602,7 @@ class Dashboard extends Component{
                         <hr className='cardHr'/>
                         <div className='adivInner'>
                             <p className='costAmount'>Total</p>
-                            <p className='totalAmount'>Rs 500</p>
+                            <p className='costAmount'>Rs 500</p>
                         </div>
                     </div>
                     </div>
